@@ -4,6 +4,9 @@ import uuid
 
 app = Flask(__name__)
 CORS(app)
+@app.route('/', methods=['GET'])
+def ping():
+    return "B-Tree Server still alive"
 
 class BTreeNode:
     def __init__(self, leaf=True):
