@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ quản trị CSDL sinh viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Thêm Sinh Viên Mới</h2>
+        <div class="form-group">
+            <label>Mã SV:</label>
+            <input type="text" id="svId" placeholder="Ví dụ: 123, 24521581">
+        </div>
+        <div class="form-group">
+            <label>Họ và Tên:</label>
+            <input type="text" id="svName" placeholder="Ví dụ: Nguyễn Văn A">
+        </div>
+        <div class="form-group">
+            <label>Giới tính:</label>
+            <select id="svGender">
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+                <option value="Khác">Khác</option>
+            </select>
+        </div>
+        <div class="button-group">
+            <button id="addBtn" class="btn-add" onclick="handleAddStudent()">Thêm</button>
+            <button id="searchBtn" class="btn-search" onclick="handleSearchStudent()">Tìm</button>
+            <button id="deleteBtn" class="btn-delete" onclick="handleDeleteStudent()">Xóa</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="tree-container" id="treeView">
+            <h3>Minh họa B-Tree (Bậc 3)</h3>
+            <svg id="svg-layer"></svg>
+            <div id="treeContent"></div>
+        </div>
+
+        <div class="table-container">
+            <h3>Danh sách dữ liệu gốc</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã SV</th>
+                        <th>Họ và Tên</th>
+                        <th>Giới tính</th>
+                    </tr>
+                </thead>
+                <tbody id="tableView"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
