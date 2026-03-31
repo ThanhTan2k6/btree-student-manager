@@ -99,7 +99,7 @@ async function handleAddStudent() {
     btn.disabled = true; idInput.disabled = true; nameInput.disabled = true; genderInput.disabled = true;
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/insert', {
+        const response = await fetch('https://btree-api-h1vp.onrender.com/api/insert', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id: id })
@@ -148,7 +148,7 @@ async function handleSearchStudent() {
     if (!id) return alert("Vui lòng nhập Mã SV cần tìm!");
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/search', {
+        const response = await fetch('hhttps://btree-api-h1vp.onrender.com/api/search', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id: id })
@@ -199,7 +199,7 @@ async function handleDeleteStudent() {
     if (!confirm(`Bạn có chắc chắn muốn xóa sinh viên ${id}?`)) return;
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/delete', {
+        const response = await fetch('https://btree-api-h1vp.onrender.com/api/delete', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id: id })
