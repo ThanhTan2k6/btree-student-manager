@@ -1,4 +1,4 @@
-# 🌳 B-Tree Student Manager
+# B-Tree Student Manager
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
@@ -13,18 +13,18 @@ A Data Structures and Algorithms (DSA) project. This is a web-based student mana
 
 ---
 
-## ✨ Features
+## Features
 - **Insert:** Add new students with auto-balancing and dynamic node splitting.
 - **Search:** Find students by ID with visual path highlighting from Root to Leaf.
 - **Delete:** Remove records with instant tree reconstruction.
 - **Visualization:** Smooth SVG animations calculating coordinates for bezier curves between nodes.
 
-## 🛠 Tech Stack
+## Tech Stack
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript (DOM Manipulation & SVG) - Deployed on **Vercel**
 - **Backend:** Python 3, Flask, RESTful API - Deployed on **Render**
 - **Keep-alive:** UptimeRobot (Ping monitoring)
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```text
 btree-project/
@@ -37,7 +37,7 @@ btree-project/
 │   └── script.js            # API fetching & SVG drawing logic
 └── README.md
 ```
-## 💻 Local Setup
+## Local Setup
 
 If you want to run this project locally, follow these steps:
 
