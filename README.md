@@ -8,7 +8,7 @@
 
 A Data Structures and Algorithms (DSA) project. This is a web-based student management system that visually simulates a **B-Tree (Order 3 / 2-3 Tree)** data structure in real-time.
 
-🚀 **[LIVE DEMO](https://btree-student-manager.vercel.app/)**
+**[LIVE DEMO](https://btree-student-manager.vercel.app/)**
 *(Note: The free backend server might take ~30 seconds to wake up on the first request. Please be patient!)*
 
 ---
